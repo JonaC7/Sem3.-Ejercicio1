@@ -6,18 +6,27 @@ namespace Ejercicio5
     {
         static void Main(string[] args)
         {
-            int valor;
-            string linea;
+            int num;
             do
             {
-                Console.WriteLine("Ingrese un valor entre 0 y 99 (0 finaliza);:");
-                linea = Console.ReadLine();
-                valor = int.Parse
-            }
-        }
+                Console.WriteLine("Ingrese un un numero entero (Con 0 finaliza);:");
+                num = int.Parse(Console.ReadLine());
 
-        {
-            Console.WriteLine("Hello World!");
+
+                if (num >= 100)
+                {
+                    Console.WriteLine("tiene 3 digitos");
+                }
+                if (num >= 10)
+                {
+                    Console.WriteLine("tiene 2 digitos");
+                }
+                else
+                {
+                    Console.WriteLine("tiene 1 digitos");
+                }
+ 
+            } while (num != 0);
         }
     }
 }
